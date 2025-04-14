@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-
+/* Reformate moi cette func c'est dégeu ! */
 int Calcul( int nb, int nb1, char operateur)
 
 {
@@ -34,16 +34,17 @@ int Calcul( int nb, int nb1, char operateur)
 }
 }
 
+
 void ft_putstr(char *str)
 {
     while (*str)
-    write(1, str++, 1);
+    write(1, str++, 1); /*Tu peux tab c'est plus propre !*/
 }
 
 int main ()
 
 {
-    int nb, nb1;
+    int nb, nb1; /*Evite au possible d'assigné deux variables sur la même ligne*/
     char operateur;
     char chaine1 [50];
 
@@ -52,7 +53,7 @@ int main ()
     write(1, "\n",1);
 
     scanf ("%d %c %d", &nb, &operateur, &nb1);
-    int resultat = Calcul(nb, nb1, operateur);
+    int resultat = Calcul(nb, nb1, operateur); /*Pas besoin de recaster en int!*/
 
     sprintf(chaine1,"Le resultat de %d %c %d est :%d\n", nb, operateur,nb1, resultat);
     ft_putstr(chaine1);
