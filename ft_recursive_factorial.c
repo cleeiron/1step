@@ -2,39 +2,28 @@
 
 int ft_recursive_factorial(int nb)
 {
-    int result;
-    
-    if (nb < 0)
+    if (nb<0)
         return 0;
+
+    if ( nb == 0 || nb ==1)
+    return 1;
     
-    while (nb > 0)      
-    {
-        result *= nb;
-        nb--;
-    }
-    return result;
-    
-    ft_recursive_factorial
+    return nb * ft_recursive_factorial(nb-1);
 }
 
-int main()   
+int main()  
 {
-    ft_recursive_factorial();
+
     int nb;
     int result;
 
-    nb = 0;
-    result = 0;
-    printf("Choisis un chiffre\n");
+    printf("Choisis un nombre :\n");
     scanf("%d",&nb);
-    result = ft_iterative_factorial(nb);
-    printf("La factorielle de : %d! est %d\n", nb , result);
-    return 0;
-}#include<stdio.h>
 
-int ft_recursive_factorial(int nb)
-{
-    if (nb < 0)
+    result = ft_recursive_factorial(nb);
 
-    return 0;
+    printf ("La factorielle de : %d est : %d\n", nb, result);
+
+    return 0 ;
+    
 }
