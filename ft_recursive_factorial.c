@@ -21,6 +21,6 @@ int main()
 
     printf ("La factorielle de : %d est : %d\n", nb, result);
 
-    return 0 ;
+    return 0;
     
 }
