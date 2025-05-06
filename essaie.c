@@ -1,22 +1,31 @@
-#include<stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   essaie.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cleiron <cleiron@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/05 19:56:44 by cleiron           #+#    #+#             */
+/*   Updated: 2025/05/06 17:27:19 by cleiron          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int soustraction (int nb, int nb1)
+#include <stdio.h>
 
+int soustraction(int nb, int nb1)
 {
-    int result = nb - nb1;
-    return result;
-
+	return (nb - nb1);
 }
 
-int main ()
-
+int main(void)
 {
-    int nb , nb1, result;
+	int nb;
+	int nb1;
+	int result;
 
-    printf("Choisis deux nombres\n");
-    scanf("%d %d",&nb,&nb1);
-    result = soustraction(nb,nb1);
-    printf("Le resultat est:%d\n", result);
-    return 0;
-
+	printf("Choisis deux nombres\n");
+	scanf("%d %d", &nb, &nb1);
+	result = soustraction(nb, nb1);
+	printf("Le resultat est:%d\n", result);
+	return (0);
 }
