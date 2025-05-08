@@ -4,7 +4,7 @@ void swap(int *a,int *b)
 {
     int temp = *a;
     *a = *b;
-    temp = *b;
+    *b = temp;
 }
  int main(void)
 
